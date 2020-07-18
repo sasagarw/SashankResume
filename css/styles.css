@@ -108,6 +108,39 @@ header {
 .work-experience {
     background: #A1C6D7;
 }
+.work-experience .btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.work-experience .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+
+/* Certificatons
+------------------------------------*/
+.certification {
+    background: #2F3061;
+    color: #F7FFF7;
+}
+.certification .divider > section {
+    border-bottom: 1px dashed #F7FFF7;
+    padding: 25px 0;
+}
+.certification .divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* Achievements
+------------------------------------*/
+.achievements ul {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
 
 /* Education
 ------------------------------------*/
@@ -119,13 +152,6 @@ header {
 }
 .education p {
     width: 60%;
-}
-
-/* Achievements
-------------------------------------*/
-.achievements ul {
-    padding-left: 10px;
-    font-size: 18px;
 }
 
 /* Contact Info
