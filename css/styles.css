@@ -133,6 +133,9 @@ header {
 .certification .divider > section:last-of-type {
     border-bottom: none;
 }
+.certification .item-details .job-summary > a  {
+    margin: 10px;
+}
 
 /* Achievements
 ------------------------------------*/
