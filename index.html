@@ -9,9 +9,19 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div class="topnav" id="topNav">
+      <a class="nav active" href="#home">Home</a>
+      <a href="#skills" class="nav">Technical Skills</a>
+      <a href="#work" class="nav">Work Experience</a>
+      <a href="#projects" class="nav">Projects</a>
+      <a href="#license" class="nav">Licenses & Certifications</a>
+      <a href="#education" class="nav">Education</a>
+      <a href="#achievements" class="nav">Achievements</a>
+      <a href="#contact" class="nav">Contact Me</a>
+    </div>
     <main>
       <header>
-        <div class="content-wrap">
+        <div class="content-wrap" id="home">
           <h1>Sashank Agarwal</h1>
           <h2>Associate Software Engineer</h2>
           <p>Forward-thinking Software Engineer with background working productively 
@@ -22,7 +32,7 @@
       </header>
 
       <section class="skill-set">
-        <div class="content-wrap item-details divider">
+        <div class="content-wrap item-details divider" id="skills">
           <h2>Technical Skills</h2>
           <section class="skill-item">
             <div class="skill-details">
@@ -54,7 +64,7 @@
       </section>
 
       <section class="work-experience">
-        <div class="content-wrap item-details divider">
+        <div class="content-wrap item-details divider" id="work">
           <h2>Work Experience</h2>
           <section class="job-item">
             <div class="job-details">
@@ -125,7 +135,7 @@
       </section>
 
       <section class="projects">
-        <div class="content-wrap divider">
+        <div class="content-wrap divider" id="projects">
           <h2>Featured Projects</h2>
           <section class="project-item">
             <img src="images/ddos-attack.jpeg" alt="DDoS attack in SDN">
@@ -194,7 +204,7 @@
       </section>
 
       <section class="certification">
-        <div class="content-wrap item-details divider">
+        <div class="content-wrap item-details divider" id="license">
           <h2>Licenses & Certifications</h2>
           <section class="job-item">
             <div class="job-details">
@@ -270,7 +280,7 @@
       </section>
 
       <section class="education">
-        <div class="content-wrap item-details">
+        <div class="content-wrap item-details" id="education">
           <h2>Education</h2>
           <section>
             <h3>Ramaiah Institute of Technology - Bangalore</h3>
@@ -291,7 +301,7 @@
       </section>
 
       <section class="achievements">
-        <div class="content-wrap item-details">
+        <div class="content-wrap item-details" id="achievements">
           <h2>Achievements</h2>
           <section>
             <ul>
@@ -307,7 +317,7 @@
       </section>
 
       <footer>
-        <div class="content-wrap">
+        <div class="content-wrap" id="contact">
           <h2>Let's Keep in Touch!</h2>
           <ul class="contact-list">
             <li><a href="tel:+919513421053">+91-9513421053</a></li>
@@ -319,5 +329,16 @@
         </div>
       </footer>
     </main>
+    <script>
+      var header = document.getElementById("topNav");
+      var abtns = header.getElementsByClassName("nav");
+      for (var i = 0; i < abtns.length; i++) {
+        abtns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+    </script>
   </body>
 </html>
